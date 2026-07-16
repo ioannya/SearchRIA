@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+
+input {
+  flex: 1;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+
+button {
+  padding: 15px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+
+button:hover {
+  background: #1d4ed8;
+}
+
+
+.card{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:14px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    transition:.2s;
+}
+
+.card:hover{
+    transform:translateY(-3px);
+}
+
+
+.source {
+  font-weight: bold;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+
+.loading {
+  text-align: center;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.date{
+    color:gray;
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#666;
+    margin-bottom:30px;
+}
+
+button{
+    transition:.2s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+}
+
+.score{
+    color: #198754;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
