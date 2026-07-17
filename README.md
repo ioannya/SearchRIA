@@ -35,41 +35,62 @@
 ## Установка
 ### Backend
 Клонировать репозиторий:
+\`\`\` bash
 git clone https://github.com/ioannya/SearchRIA.git
+\`\`\`
 
 Перейти в папку backend:
+\`\`\` bash
 cd backend
+\`\`\`
 
 Установить зависимости:
+\`\`\` bash
 pip install -r requirements.txt
+\`\`\`
 
 Запустить сервер:
+\`\`\` bash
 uvicorn main:app --reload
+\`\`\`
 
 Backend запустится на:
+\`\`\` bash
 http://127.0.0.1:8000
+\`\`\`
 
 ### Frontend
 Перейти в папку frontend:
+\`\`\` bash
 cd frontend
+\`\`\`
 
 Установить зависимости:
+\`\`\` bash
 npm install 
+\`\`\`
 
 Запустить:
+\`\`\` bash
 npm start
+\`\`\`
 
 Frontend запустится на:
+\`\`\` bash
 http://localhost:5173
+\`\`\`
 
 ## API
 GET / 
 Возвращает:
+\`\`\` bash
 {
   "status": "ok"
 }
+\`\`\`
 
 ### ER-диаграмма
+```text
 ┌─────────────────────────────┐
 │         News                │
 ├─────────────────────────────┤
@@ -79,6 +100,7 @@ GET /
 │ source                      │
 │ url                         │
 └─────────────────────────────┘
+```
 
 ### Код сервисов
 Хранится в файлах main.py (Сервис FastAPI, который обрабатывает пользовательские запросы) и App.jsx (Сервис пользовательского интерфейса React)
