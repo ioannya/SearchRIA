@@ -35,59 +35,59 @@
 ## Установка
 ### Backend
 Клонировать репозиторий:
-\`\`\` bash
+``` bash
 git clone https://github.com/ioannya/SearchRIA.git
-\`\`\`
+```
 
 Перейти в папку backend:
-\`\`\` bash
+``` bash
 cd backend
-\`\`\`
+```
 
 Установить зависимости:
-\`\`\` bash
+``` bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 Запустить сервер:
-\`\`\` bash
+``` bash
 uvicorn main:app --reload
-\`\`\`
+```
 
 Backend запустится на:
-\`\`\` bash
+``` bash
 http://127.0.0.1:8000
-\`\`\`
+```
 
 ### Frontend
 Перейти в папку frontend:
-\`\`\` bash
+``` bash
 cd frontend
-\`\`\`
+```
 
 Установить зависимости:
-\`\`\` bash
+``` bash
 npm install 
-\`\`\`
+```
 
 Запустить:
-\`\`\` bash
+``` bash
 npm start
-\`\`\`
+```
 
 Frontend запустится на:
-\`\`\` bash
+``` bash
 http://localhost:5173
-\`\`\`
+```
 
 ## API
 GET / 
 Возвращает:
-\`\`\` bash
+``` bash
 {
   "status": "ok"
 }
-\`\`\`
+```
 
 ### ER-диаграмма
 ```text
