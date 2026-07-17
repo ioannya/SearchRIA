@@ -82,6 +82,7 @@ http://localhost:5173
 
 ## API
 GET / 
+
 Возвращает:
 ``` bash
 {
