@@ -113,3 +113,55 @@ button:hover{
     font-weight: bold;
     margin-bottom: 6px;
 }
+
+.mode-switch {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.mode-switch button {
+  background: white;
+  color: #2563eb;
+  border: 2px solid #2563eb;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.mode-switch button.active {
+  background: #2563eb;
+  color: white;
+}
+
+.answer-box {
+  background: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+  border-left: 4px solid #2563eb;
+}
+
+.answer-box p {
+  white-space: pre-line;
+  line-height: 1.5;
+}
+
+.answer-sources {
+  margin-top: 15px;
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+}
+
+.answer-sources a {
+  display: block;
+  color: #2563eb;
+  text-decoration: none;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.answer-sources a:hover {
+  text-decoration: underline;
+}

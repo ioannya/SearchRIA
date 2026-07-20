@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from opensearchpy import OpenSearch
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
+from summarizer import summarize
 import os
 
 load_dotenv()
@@ -56,4 +57,38 @@ def search(q: str):
         "query": q,
         "count": len(posts),
         "results": posts
+    }
+
+
+@app.get("/ask")
+def ask(q: str, top_n: int = 5):
+
+    result = client.search(
+        index="ria_posts",
+        body={
+            "size": top_n,
+            "query": {
+                "match": {
+                    "text": q
+                }
+            }
+        }
+    )
+
+    posts = []
+
+    for hit in result["hits"]["hits"]:
+        post = hit["_source"]
+        post["score"] = round(hit["_score"], 2)
+        posts.append(post)
+
+    answer = summarize(q, posts)
+
+    return {
+        "query": q,
+        "answer": answer,
+        "sources": [
+            {"url": post["url"], "score": post["score"]}
+            for post in posts
+        ]
     }
