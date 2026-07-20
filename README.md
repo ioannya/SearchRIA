@@ -39,11 +39,6 @@
 git clone https://github.com/ioannya/SearchRIA.git
 ```
 
-Перейти в папку backend:
-``` bash
-cd backend
-```
-
 Установить зависимости:
 ``` bash
 pip install -r requirements.txt
